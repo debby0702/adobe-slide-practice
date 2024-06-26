@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Adobe, Acrobat, PDF, Premiere, Photoshop, After Effects, Illustrator, Dreamweaver">
+    <meta name="description" content="Adobe 正在透過數位體驗改變世界。我們協助客戶建立、提供及最佳化內容和應用程式。">
+    <!-- 開放社交關係圖(FB、LINE使用) -->
+    <meta property="og:url"                content="https://debby0702.github.io/adobe_slide_practice/">
+    <!--                                            github產生的公開網址  -->
+    <meta property="og:type"               content="website">
+    <meta property="og:title"              content="Adobe：創意、行銷和文件管理解決方案">
+    <meta property="og:description"        content="Adobe 正在透過數位體驗改變世界。我們協助客戶建立、提供及最佳化內容和應用程式。">
+    <meta property="og:image"              content="https://debby0702.github.io/adobe_slide_practice/images/og-index.png">
+    <!--                                            一定要用「公開網址」(github產生的)         + 圖片路徑 -->
+    <meta property="og:locale"             content="zh_TW">
+    <title>Adobe：創意、行銷和文件管理解決方案</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- CDNjs放css後面(先載排版的CSS資源，最後再載ICON資源) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fancybox css (載min)-->
+    <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jQuery -->
+    <!-- CDN資源(開發完成再用) -->
+    <!-- 加defer：先下載，html全部載完再執行js(過去IE不認得defer，現在可以了) -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- fancybox js (載min)-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="./js/master.js"></script>
+</head>
+<body>
+    <div class="wrapper mask">
+        <nav class="nav" id="Nav">
+            <!--a(需要href)改成input(不用跳頁的按鈕)  -->
+            <!-- input是表單輸入標籤，延伸運用很多，像是後台給人填寫表單 -->
+            <!-- type種類:button, radio, file, date, range, checkbox, textarea...。  用value就能打字 -->
+            <input class="nav-btn nav-btn-active" type="button" value="acrobat">
+            <input class="nav-btn nav-btn-premiere" type="button" value="premiere">
+            <input class="nav-btn nav-btn-photoshop" type="button" value="photoshop">
+            <input class="nav-btn nav-btn-after-effects" type="button" value="after-effects">
+            <input class="nav-btn nav-btn-illustrator" type="button" value="illustrator">
+            <input class="nav-btn nav-btn-dreamweaver" type="button" value="dreamweaver">
+        </nav>
+
+        <div class="grid grid-3 grid-slide" id="Slide">
+            <div class="grid-item grid-item-ac">
+                <article class="article article-ac">
+                    <div class="article-head">
+                        <!-- 一個網站1個h1就好，因此6頁面合併時把h1都改為h2 -->
+                        <h2 class="article-title">最佳的 PDF 工具現在更加緊密連結</h2>
+                        <p class="article-desc">Acrobat DC 與 Document Cloud 服務，是現今多裝置世界中最完整的 PDF 解決方案。可將您與文件、團隊及最愛的 PDF 工具連成一體。若有需要，您可以隨時隨地在任何裝置上使用它，讓團隊工作更輕鬆。
+                        </p>
+                        <p class="article-desc">使用桌上型電腦及行動裝置，與創意團隊、客戶和廣告代理商安全地協作 (不論防火牆內外)。您可以將 InDesign 或 Illustrator 檔案轉換成 PDF，以輕鬆地分享、傳送給多位審核者，並在單一檔案中線上收集注釋。
+                            
+                        </p>
+                    </div>
+                    <div class="article-body">
+                        <div class="grid" >
+                            <!-- <a>點小圖跑出大圖 -->
+                            <a 
+                                href="./images/ac-1-lg.png" 
+                                target="_blank" 
+                                data-fancybox="ac"
+                                data-caption="衍生自 PostScript 頁面描述語言的子集，用以生成和輸出圖形。"
+                            >
+                                <div class="card hover-fade-in hover-zoom-in">
+                                    <div class="card-head">
+                                        <!-- 放小圖 -->
+                                        <img class="card-img" src="./images/ac-1-sm.png" width="250" height="141" alt="衍生自 PostScript 頁面描述語言的子集，用以生成和輸出圖形。" >
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- CDN放大鏡(記得使用同版本的CDN 5.15.4) -->
+                                        <i class="fas fa-search-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a 
+                                href="./images/ac-2-lg.png" 
+                                target="_blank" 
+                                data-fancybox="ac"
+                                data-caption="字型嵌入/替換系統，可使字型隨檔案一起傳輸。"
+                            >
+                                <div class="card hover-fade-in hover-zoom-in">
+                                    <div class="card-head ">
+                                        <img class="card-img" src="./images/ac-2-sm.png" width="250" height="141" alt="字型嵌入/替換系統，可使字型隨檔案一起傳輸。" >
+                                    </div>
+                                    <div class="card-body">
+                                        <i class="fas fa-search-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a 
+                                href="./images/ac-3-lg.png" 
+                                target="_blank" 
+                                data-fancybox="ac"
+                                data-caption="結構化的儲存系統，用以綁定這些元素和任何相關內容到單個檔案，帶有適當的資料壓縮系統。"
+                            >
+                                <div class="card hover-fade-in hover-zoom-in">
+                                    <div class="card-head">
+                                        <img class="card-img" src="./images/ac-3-sm.png" width="250" height="141" alt="結構化的儲存系統，用以綁定這些元素和任何相關內容到單個檔案，帶有適當的資料壓縮系統。" >
+                                    </div>
+                                    <div class="card-body">
+                                        <i class="fas fa-search-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a 
+                                href="./images/ac-4-lg.png" 
+                                target="_blank" 
+                                data-fancybox="ac"
+                                data-caption="PDF 包含已標記和解析的 PostScript 原始碼，以在修改 PDF 頁面描述中的項與修改所產生的頁面造型之間直接保持一致。"
+                            >
+                                <div class="card hover-fade-in hover-zoom-in">
+                                    <div class="card-head">
+                                        <img class="card-img" src="./images/ac-4-sm.png" width="250" height="141" alt="PDF 包含已標記和解析的 PostScript 原始碼，以在修改 PDF 頁面描述中的項與修改所產生的頁面造型之間直接保持一致。" >
+                                    </div>
+                                    <div class="card-body">
+                                        <i class="fas fa-search-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="grid-item grid-item-pr">
+                <article class="article article-pr">
+                    <div class="article-head">
+                        <h2 class="article-title">永遠更勝一籌的視訊編輯</h2>
+                        <p class="article-desc">Premiere Pro CC 是領先業界的視訊編輯軟體，適用於電影、電視和網路。創意工具、與其他 Adobe 應用程式和服務的整合及 Adobe Sensei 的強大威力，可幫助您在一個順暢的工作流程中將素材打造成精美的影片和視訊。我們的全新應用程式 Premiere Rush 也包含在您的訂閱中，好讓您可以隨處在所有裝置上捕捉素材及開始編輯。
+                        </p>
+                        <p class="article-desc">好萊塢電影製作人、電視編輯人員、YouTuber 網紅、錄影師等每個要訴說故事的人都是使用 Premiere Pro，也包括您。
+                            
+                        </p>
+                    </div>
+                    <div class="article-body">
+                        <div class="grid" >
+                            <a 
+                                href="https://youtu.be/EM--R38YfJw" 
+                                target="_blank"
+                                data-fancybox="pr"
+                                data-caption="Premiere Pro 基礎教學 01：Youtuber 吃飯都靠它！免經驗無痛上手大師剪輯軟體！"
+                                data-width="640"
+                                data-height="360"
+                                >
+                                <div class="card hover-fade-in hover-zoom-in">
+                                    <div class="card-head">
+                                        <img class="card-img" src="./images/pr-1-sm.png" width="250" height="141" alt="Premiere Pro 基礎教學 01：Youtuber 吃飯都靠它！免經驗無痛上手大師剪輯軟體！" >
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- CDN放大鏡(記得使用同版本的CDN 5.15.4) -->
+                                        <i class="fas fa-search-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a 
+                                href="https://youtu.be/WTHI4VhoyDU" 
+                                target="_blank"
+                                data-fancybox="pr"
+                                data-caption="請你挑戰 5 分鐘內學會，大師剪輯軟體 Adobe Premiere！"
+                                data-width="640"
+                                data-height="360"
+                            >
+                                <div class="card hover-fade-in hover-zoom-in">
+                                    <div class="card-head ">
+                                        <img class="card-img" src="./images/pr-2-sm.png" width="250" height="141" alt="請你挑戰 5 分鐘內學會，大師剪輯軟體 Adobe Premiere！" >
+                                    </div>
+                                    <div class="card-body">
+                                        <i class="fas fa-search-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+            
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="grid-item grid-item-ps">
+                <article class="article article-ps">
+                    <div class="article-head">
+                        <h2 class="article-title">顛覆想像的真實</h2>
+                        <p class="article-desc">只要您想像得到的，都可以運用全球最佳的影像和圖形設計軟體 Photoshop CC 製作出來。建立和增強相片、插圖和 3D 圖稿。設計網站和行動應用程式。編輯視訊、模擬實際的畫作和其他更多功能。讓任何創意成真所需的一切都在這裡。
+                        </p>
+                        <p class="article-desc">全球數以百萬計的設計師、攝影師和藝術家都使用 Photoshop，讓不可能的影像得以實現。
+                            
+                        </p>
+                    </div>
+                    <div class="article-body">
+                        <div class="grid" >
+                            <!-- <a>點小圖跑出大圖 -->
+                            <a 
+                                href="https://blog.adobe.com/en/topics/photoshop" 
+                                target="_blank"
+                                data-fancybox="ps"
+                                data-type="iframe"
+                                data-caption="Adobe Blog"
+                                data-width="1200"
+                                data-height="800"
+                            >
+                                <div class="card hover-fade-in hover-zoom-in">
+                                    <div class="card-head">
+                                        <!-- 放小圖 -->
+                                        <img class="card-img" src="./images/ps-1-sm.png" width="250" height="141" alt="Adobe Blog" >
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- CDN放大鏡(記得使用同版本的CDN 5.15.4) -->
+                                        <i class="fas fa-search-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <!-- 只要iframe裡src的內容，單獨看連結會壞掉，加上fancy box就會成功 -->
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7229.357394420051!2d121.51081582558784!3d25.044975757525226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a973107749ad%3A0x3eca9af750aa028!2z6LWr57a16Kit6KiI5a246Zmi77yN56uZ5YmN5a246Zmi772c6Zu76IWm5oqA6IO977yG6Kit6KiI6Kqy56iLKOW5s-mdouioreioiC_lrqTlhafoqK3oqIgv55-t5b2x6Z-zL-aUneW9sSk!5e0!3m2!1szh-TW!2stw!4v1718795932601!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                            <a 
+                                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7229.357394420051!2d121.51081582558784!3d25.044975757525226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a973107749ad%3A0x3eca9af750aa028!2z6LWr57a16Kit6KiI5a246Zmi77yN56uZ5YmN5a246Zmi772c6Zu76IWm5oqA6IO977yG6Kit6KiI6Kqy56iLKOW5s-mdouioreioiC_lrqTlhafoqK3oqIgv55-t5b2x6Z-zL-aUneW9sSk!5e0!3m2!1szh-TW!2stw!4v1718795932601!5m2!1szh-TW!2stw" 
+                                target="_blank"
+                                data-fancybox="ps"
+                                data-type="iframe"
+                                data-caption="學習地點 - 站前學院"
+                                data-width="1200"
+                                data-height="800"
+                            >
+                                <div class="card hover-fade-in hover-zoom-in">
+                                    <div class="card-head ">
+                                        <img class="card-img" src="./images/ps-2-sm.png" width="250" height="141" alt="學習地點 - 站前學院" >
+                                    </div>
+                                    <div class="card-body">
+                                        <i class="fas fa-search-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a 
+                                href="https://www.ortwin-oberhauser.com/pdfs/google_seo-starter-guide.pdf" 
+                                target="_blank"
+                                data-fancybox="ps"
+                                data-type="iframe"
+                                data-caption="SEO 文件"
+                                data-width="1200"
+                                data-height="800"
+                            >
+                                <div class="card hover-fade-in hover-zoom-in">
+                                    <div class="card-head">
+                                        <img class="card-img" src="./images/ps-3-sm.png" width="250" height="141" alt="SEO 文件" >
+                                    </div>
+                                    <div class="card-body">
+                                        <i class="fas fa-search-plus"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="grid-item grid-item-ae">
+                <article class="article article-ae">
+                    <div class="article-head">
+                        <h2 class="article-title">讓大場面更加壯觀</h2>
+                        <p class="article-desc">建立劇院級的影片標題、介紹和轉場效果。點火或造雨。製作標誌或人物的動畫。有了業界標準的動態圖形和視覺效果軟體 After Effects CC，您就能讓任何創意想法動起來。
+                        </p>
+                        <p class="article-desc">動畫家、設計師和合成師都使用 After Effects 來建立動態圖形和視覺效果，以用於電影、電視、視訊和網頁等媒體。
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="grid-item grid-item-ai">
+                <article class="article article-ai">
+                    <div class="article-head">
+                        <h2 class="article-title">最先進的插圖創作技術</h2>
+                        <p class="article-desc">此業界標準的向量圖形軟體可讓您建立標誌、圖示、繪圖、印刷樣式和插圖，用於印刷、網頁、視訊和行動裝置等媒體。
+                        </p>
+                        <p class="article-desc">數以百萬計的設計師和藝術家都使用 Illustrator CC 來進行各種創作，從網頁圖示、產品包裝、書籍插圖到廣告看板，全都包括在內。
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="grid-item grid-item-dw">
+                <article class="article article-dw">
+                    <div class="article-head">
+                        <h2 class="article-title">互動式網站真正快速無比</h2>
+                        <p class="article-desc">Dreamweaver CC 提供更快速簡單的方法來設計、撰寫程式碼以及發佈網站與網路應用程式，使其在任何大小的螢幕上都能完美呈現。
+                        </p>
+                        <p class="article-desc">透過支援 HTML、CSS、JavaScript 等功能的網路設計軟體，幾乎隨處都能快速地建立及發佈網頁。
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
