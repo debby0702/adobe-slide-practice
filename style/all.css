@@ -130,6 +130,15 @@ a {
     width: 100vw;
     /*     (可視範圍)view point height */
     height: 100vh;
+
+    /* 圖片內容過多時，在不同分頁會看到前面分頁的殘餘陰影、圖片 */
+    /* 所以過多的要變成scrollbar */ 
+    overflow: auto;
+}
+
+/* -webkit:僅chrome, safari, opera適用 */
+.grid-item::-weblot-scrollbar {
+    display:none;
 }
 
 /* 全頁面的，刪除gap */

@@ -66,7 +66,7 @@ setGrid();
 // });
 
 function setScroll() {
-    $(window).scroll(function () {
+    $('.grid-item').scroll(function () {
         // isMobile: true
         // !isMobile:flase
         if (!isMobile) return;
