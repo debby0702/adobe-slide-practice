@@ -33,6 +33,7 @@ a {
     right: 1rem;
     top:50%;
     margin-top: -116px;
+    z-index: 10;
 }
 
 .nav-active{
@@ -57,12 +58,13 @@ a {
 }
 
 /* 當前網站、hover的鈕 */
-.nav-btn-active,
+/* 新擬態選取器：disabled */
+.nav-btn:disabled,
 .nav-btn:hover{
     opacity: 1;
 }
 
-.nav-btn-active{
+.nav-btn:disabled{
     /* 點選當前網頁無動作、無手指 */
     pointer-events: none;
 }
@@ -70,6 +72,8 @@ a {
 .nav-btn-index{
     background-color: #000;
 }
+
+
 
 /* article-------------------------------------------------------------------------- */
 
@@ -131,6 +135,8 @@ a {
 /* 全頁面的，刪除gap */
 .grid-slide{
     gap: 0;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
 }
 
 .grid-item-ac{
